@@ -63,7 +63,7 @@ for i in range(pow(2,border_limit)):
             max_res=max(expanded_res)
             while(max_res>=border_limit):
                 for j in range(len(expanded_res)):
-                    if(expanded_res[j]>=4):
+                    if(expanded_res[j]>=border_limit):
                         res=expand_result(expanded_res[j])
                         expanded_res[j]=res[0]
                         for k in range(1,len(res)):
